@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#143f39">
+<title>JEE Main 2027 · Syllabus tracker</title>
+<style>
+:root{--ink:#192c29;--muted:#596964;--line:#d6ddd5;--green:#184c40;--paper:#f6f7f1;--mono:"IBM Plex Mono",Consolas,monospace;font:16px/1.5 "DM Sans",system-ui,sans-serif;color:var(--ink);background:var(--paper);color-scheme:light}
+*{box-sizing:border-box}body{margin:0}button,input,select{font:inherit;color:inherit}button,select,label{cursor:pointer}a{color:var(--green)}a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #188167;outline-offset:3px}
+.wrap{width:min(1160px,calc(100% - 64px));margin:auto}
+header{border-bottom:1px solid var(--line);background:#fcfcf8}.top{min-height:64px;display:flex;align-items:center;justify-content:space-between;gap:12px}.brand{display:flex;align-items:center;gap:11px;font-weight:750;letter-spacing:-.035em}.mark{display:inline-grid;place-items:center;background:#1e5146;color:#d8f3a3;border-radius:8px;width:32px;height:32px}.mark span{font:700 23px Georgia,serif}.source{font-size:.84rem;text-underline-offset:4px}
+main{padding-top:34px;padding-bottom:40px}.heading,.section-heading{display:flex;align-items:center;justify-content:space-between;gap:16px}.eyebrow,.caption,.unit,.count,.credit,.exact,.percent,.codes{font-family:var(--mono);font-variant-numeric:tabular-nums}.eyebrow,.caption{font-size:.71rem;text-transform:uppercase;letter-spacing:.09em;font-weight:650}.eyebrow{color:var(--green)}h1,h2,h3,p{margin:0}h1{font-size:clamp(2.45rem,5.5vw,4rem);line-height:1.08;letter-spacing:-.065em;font-weight:650;margin:8px 0 6px}.heading p{font-size:.94rem;color:var(--muted)}.save{font-size:.77rem;color:#315c4d;display:flex;align-items:center;gap:7px}.save:before{content:"";width:7px;height:7px;border-radius:50%;background:#648a52}.save.problem{color:#884016}.save.problem:before{background:#c77535}
+.dashboard{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:23px 0 33px}.panel{border-radius:16px;border:1px solid var(--line);padding:23px 26px;background:#fff}.overall{position:relative;isolation:isolate;overflow:hidden;display:flex;flex-direction:column;background:#163f37;border-color:#163f37;color:#fff}.overall canvas{position:absolute;pointer-events:none;right:0;top:0;width:60%;height:84%;z-index:-1}.overall .caption{color:#ddeddf}.overall .percent{font-family:"DM Sans",system-ui,sans-serif;font-size:clamp(2.65rem,5vw,3.9rem);line-height:1.13;letter-spacing:-.065em;font-weight:550}.pctline{margin:11px 0 4px;display:flex;align-items:baseline;flex-wrap:wrap;gap:10px}.credit,.exact{font-size:.73rem}.overall .credit,.overall .exact{color:#d9e6d9}.overall .bar{margin:18px 0 0;height:8px;background:#436359}.bar{height:6px;background:#e7ebe6;border-radius:6px;overflow:hidden}.fill{display:block;width:0;height:100%;background:var(--accent,#c4e88e);transition:width .2s;border-radius:inherit}.subjects{display:grid;align-content:space-between;gap:9px}.subjects .caption{color:var(--muted);margin-bottom:1px}.subject-line{display:grid;grid-template-columns:100px 1fr auto;align-items:center;gap:13px;font-size:.82rem;font-weight:650}.subject-line .percent{text-align:right;min-width:4.7em}.subject-line .exact{grid-column:2/-1;text-align:right;margin-top:-10px;color:var(--muted);font-weight:400}.section-heading{align-items:baseline}h2{font-size:1.65rem;letter-spacing:-.05em;font-weight:650}.count{font-size:.75rem;color:var(--muted)}
+.toolbar{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px;margin:14px 0}.tabs{display:flex;align-items:center;gap:3px;border:1px solid var(--line);border-radius:10px;padding:3px;background:#eaeee7}.tabs button{background:transparent;border:0;border-radius:7px;padding:7px 12px;font-size:.84rem;font-weight:600}.tabs button[aria-pressed=true]{background:#204e43;color:white}.filters{display:flex;gap:8px}.filters input,.filters select{background:#fff;border:1px solid var(--line);border-radius:8px;font-size:.82rem;height:37px;padding:0 9px}.filters input{width:168px}.filters select{max-width:175px}.ledger{border:1px solid var(--line);border-radius:13px;overflow:hidden;background:white}.listhead{display:flex;justify-content:space-between;align-items:center;padding:13px 20px;background:#eef2e9;border-bottom:1px solid var(--line)}h3{font-size:1rem}.rows{list-style:none;padding:0;margin:0}.row{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:12px;padding:13px 20px}.row+.row{border-top:1px solid #e4e8e0}.name{font-size:.94rem;font-weight:650;letter-spacing:-.018em}.unit{color:var(--muted);font-size:.68rem;letter-spacing:.04em}.options{display:flex;gap:5px}.option{position:relative;display:flex}.option input,.sr{position:absolute;width:1px;height:1px;clip-path:inset(50%);overflow:hidden;white-space:nowrap}.pill{display:inline-flex;align-items:center;justify-content:center;gap:5px;border:1px solid #dde3dc;background:white;color:#50605a;border-radius:6px;padding:5px 9px;font-size:.75rem;min-height:33px}.pill i{font-style:normal;font-size:.85rem;line-height:1}.option:hover .pill{border-color:#83968d}.option input:focus-visible+.pill{outline:3px solid #188167;outline-offset:1px}.option input:checked+.pill{font-weight:650}.option input[value="0"]:checked+.pill{background:#edf0ec;border-color:#9daaa0;color:#33473d}.option input[value="1"]:checked+.pill{background:#fff0d4;border-color:#b98532;color:#714411}.option input[value="2"]:checked+.pill{background:#e1f1dd;border-color:#6c9b73;color:#225a37}.empty{padding:24px}.empty button{margin-left:8px;border:0;background:transparent;color:var(--green);text-decoration:underline}.foot{margin-top:13px;font-size:.78rem;color:var(--muted)}[hidden]{display:none!important}
+@media(max-width:800px){.wrap{width:calc(100% - 32px)}.panel{padding:18px}.row{grid-template-columns:1fr;gap:6px}.subject-line{grid-template-columns:82px 1fr auto;gap:8px}.dashboard{gap:10px}.heading{align-items:flex-start;flex-direction:column;gap:9px}}
+@media(max-width:600px){main{padding-top:23px}.dashboard{grid-template-columns:1fr;margin:17px 0 23px}.subjects{gap:12px}.overall .bar{margin-top:12px}.tabs{width:100%}.tabs button{flex:1;padding-inline:5px}.filters{width:100%}.filters input,.filters select{min-width:0;width:50%;max-width:none}.row,.listhead{padding:11px 12px}.options{display:grid;grid-template-columns:1fr 1.5fr 1fr;gap:4px}.pill{width:100%;text-align:center;padding:5px 3px;font-size:.71rem;line-height:1.15}.source{font-size:.75rem}.section-heading{flex-wrap:wrap;gap:0 10px}.top{min-height:52px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<header><div class="wrap top"><div class="brand"><span class="mark" aria-hidden="true"><span>Σ</span></span> JEE Main 2027</div><a class="source" href="https://jeemain.nta.nic.in/document/syllabus-2027/" target="_blank" rel="noopener">Official NTA syllabus ↗</a></div></header>
+<main class="wrap">
+<div class="heading"><div><div class="eyebrow">Paper 1 &nbsp;/&nbsp; B.E. &amp; B.Tech.</div><h1>Syllabus tracker</h1><p id="scope"></p></div><div class="save" role="status" id="save">Progress saved in this browser</div></div>
+<section class="dashboard" aria-label="Progress overview">
+<div class="panel overall" id="overall"><canvas aria-hidden="true"></canvas><h2 class="caption">Overall progress</h2><div class="pctline"><span class="percent">0%</span><span class="exact"></span></div><p class="credit"></p><div class="bar" role="progressbar" aria-label="Overall completion" aria-valuemin="0" aria-valuemax="100"><span class="fill"></span></div></div>
+<div class="panel subjects" id="subjects"><h2 class="caption">Subject progress</h2></div></section>
+<section aria-labelledby="chapters"><div class="section-heading"><h2 id="chapters">Chapter checklist</h2><span class="count" id="summary"></span></div>
+<div class="toolbar"><div class="tabs" role="group" aria-label="Choose subject"></div>
+<div class="filters"><input type="search" id="search" placeholder="Search this subject…" aria-label="Search chapters in the selected subject"><select id="filter" aria-label="Filter chapters by status"><option value="">All statuses</option><option value="2">Completed</option><option value="1">Needs Detailed Revision</option><option value="0">Incomplete</option></select></div></div>
+<div class="ledger"><div class="listhead"><h3 id="activeName"></h3><span class="count" id="showing"></span></div><ul class="rows" aria-labelledby="activeName"></ul><p class="empty" hidden>No matching chapters. <button type="button" id="clear">Clear filters</button></p></div>
+<p class="foot">Each chapter counts equally. Completed earns 1 credit, Needs Detailed Revision earns ½, and Incomplete earns 0.</p>
+</section><div class="sr" role="status" id="announcement"></div>
+<noscript>Enable JavaScript to use the chapter checklist and save your progress.</noscript></main>
+<script>
+'use strict';
+// Each inner list is one official NTA unit, in publication order.
+const syllabus = {
+  Physics: [
+    ['Units and Measurements'], ['Motion in a Straight Line','Motion in a Plane'],
+    ['Laws of Motion'], ['Work, Energy and Power'], ['Centre of Mass','Rotational Motion'], ['Gravitation'],
+    ['Mechanical Properties of Solids','Mechanical Properties of Fluids','Thermal Properties of Matter'],
+    ['Thermodynamics'], ['Kinetic Theory of Gases'], ['Oscillations','Waves'],
+    ['Electric Charges and Fields','Electrostatic Potential and Capacitance'], ['Current Electricity'],
+    ['Moving Charges and Magnetism','Magnetism and Matter'], ['Electromagnetic Induction','Alternating Current'],
+    ['Electromagnetic Waves'], ['Ray Optics and Optical Instruments','Wave Optics'],
+    ['Dual Nature of Radiation and Matter'], ['Atoms','Nuclei'], ['Semiconductor Electronics and Logic Gates'], ['Experimental Skills']
+  ],
+  Chemistry: [
+    ['Some Basic Concepts of Chemistry'], ['Atomic Structure'], ['Chemical Bonding and Molecular Structure'],
+    ['Chemical Thermodynamics'], ['Solutions'], ['Chemical Equilibrium','Ionic Equilibrium'],
+    ['Redox Reactions','Electrochemistry'], ['Chemical Kinetics'], ['Classification of Elements and Periodicity'],
+    ['p-Block Elements'], ['d- and f-Block Elements'], ['Coordination Compounds'],
+    ['Purification and Characterisation of Organic Compounds'], ['Organic Nomenclature and Isomerism','General Organic Chemistry'],
+    ['Hydrocarbons'], ['Haloalkanes and Haloarenes'], ['Alcohols, Phenols and Ethers','Aldehydes, Ketones and Carboxylic Acids'],
+    ['Amines and Diazonium Salts'], ['Biomolecules'], ['Practical Chemistry']
+  ],
+  Mathematics: [
+    ['Sets','Relations and Functions'], ['Complex Numbers','Quadratic Equations'], ['Matrices','Determinants'],
+    ['Permutations and Combinations'], ['Binomial Theorem'], ['Sequences and Series'],
+    ['Limits','Continuity and Differentiability','Applications of Derivatives'],
+    ['Indefinite Integrals','Definite Integrals','Area under Curves'], ['Differential Equations'],
+    ['Straight Lines','Circles','Parabola','Ellipse','Hyperbola'], ['Three-Dimensional Geometry'],
+    ['Vector Algebra'], ['Statistics','Probability'], ['Trigonometric Functions and Identities','Inverse Trigonometric Functions']
+  ]
+};
+const names = Object.keys(syllabus);
+const colors = ['#267161','#ac702d','#78619d'];
+const labels = ['Incomplete','Needs Detailed Revision','Completed'];
+const marks = ['○','◐','✓'];
+const chapters = Object.fromEntries(names.map(name => [name, syllabus[name].flatMap((group,index) =>
+  group.map(title => ({title,unit:index+1,id:name.toLowerCase()+'/'+title.toLowerCase().replace(/[^a-z0-9]+/g,'-')}))) ]));
+const all = Object.values(chapters).flat();
+const $ = selector => document.querySelector(selector);
+const prefix = 'jee-main/2027/paper-1/chapter/';
+const values = new Map();
+const unsaved = new Set();
+let subject = names[0];
+function stored(value){return value==='1'||value==='2' ? Number(value) : 0}
+function warnStorage(){
+  $('#save').classList.add('problem');
+  $('#save').textContent='Browser storage unavailable · changes stay in this tab';
+}
+try {
+  all.forEach(ch => values.set(ch.id,stored(localStorage.getItem(prefix+ch.id))));
+  const probe=prefix+'storage-check';
+  localStorage.setItem(probe,'1');
+  localStorage.removeItem(probe);
+} catch {warnStorage()}
+function score(ch){return values.get(ch.id)||0}
+function saveChapter(ch,points){
+  values.set(ch.id,points);
+  unsaved.add(ch.id);
+  try {
+    for(const id of unsaved){
+      localStorage.setItem(prefix+id,String(values.get(id)));
+      unsaved.delete(id);
+    }
+    $('#save').classList.remove('problem');
+    $('#save').textContent='Progress saved in this browser';
+  }catch{warnStorage()}
+}
+function gcd(a,b){while(b){[a,b]=[b,a%b]}return a}
+function progress(node,list){
+  const points=list.reduce((total,ch)=>total+score(ch),0);
+  const numerator=50*points, denominator=list.length;
+  const percent=numerator/denominator;
+  const divisor=gcd(numerator,denominator);
+  const n=numerator/divisor, d=denominator/divisor;
+  const rounded=(n*100)%d!==0;
+  const display=(rounded?'≈':'')+percent.toLocaleString('en-IN',{maximumFractionDigits:2})+'%';
+  node.querySelector('.percent').textContent=display;
+  node.querySelector('.exact').textContent=rounded?'Exact '+n+'/'+d+'%':'';
+  node.querySelector('.exact').hidden=!rounded;
+  const bar=node.querySelector('.bar');
+  bar.setAttribute('aria-valuenow',String(percent));
+  bar.setAttribute('aria-valuetext',rounded?n+' divided by '+d+' percent':display);
+  bar.querySelector('.fill').style.width=percent+'%';
+  const credit=node.querySelector('.credit');
+  if(credit)credit.textContent=(points/2)+' / '+denominator+' chapter credits';
+}
+const panels=new Map();
+const buttons=new Map();
+for(const [index,name] of names.entries()){
+  const panel=document.createElement('div');
+  panel.className='subject-line';
+  panel.style.setProperty('--accent',colors[index]);
+  panel.innerHTML='<span>'+name+'</span><div class="bar" role="progressbar" aria-label="'+name+' completion" aria-valuemin="0" aria-valuemax="100"><span class="fill"></span></div><span class="percent"></span><span class="exact"></span>';
+  $('#subjects').append(panel);panels.set(name,panel);
+  const button=document.createElement('button');
+  button.textContent=name;
+  button.addEventListener('click',()=>{subject=name;$('#search').value='';renderList()});
+  $('.tabs').append(button);buttons.set(name,button);
+}
+function updateStats(){
+  progress($('#overall'),all);
+  for(const name of names)progress(panels.get(name),chapters[name]);
+  $('#summary').textContent=all.filter(ch=>score(ch)===2).length+' of '+all.length+' completed';
+}
+function matches(ch){
+  const query=$('#search').value.trim().toLowerCase();
+  return (ch.title.toLowerCase()+' unit '+ch.unit).includes(query)
+    && ($('#filter').value===''||score(ch)===Number($('#filter').value));
+}
+function renderList(){
+  buttons.forEach((button,name)=>button.setAttribute('aria-pressed',name===subject));
+  $('#activeName').textContent=subject;
+  const list=chapters[subject].filter(matches);
+  $('#showing').textContent=(list.length===chapters[subject].length?list.length:list.length+' / '+chapters[subject].length)+' chapters';
+  $('.empty').hidden=list.length!==0;
+  $('.rows').replaceChildren(...list.map(createRow));
+}
+function createRow(ch){
+  const row=document.createElement('li');row.className='row';
+  row.innerHTML='<div><div class="unit">NTA UNIT '+String(ch.unit).padStart(2,'0')+'</div><div class="name"></div></div><div class="options" role="radiogroup"></div>';
+  row.querySelector('.name').textContent=ch.title;
+  const group=row.querySelector('.options');group.setAttribute('aria-label',ch.title+' status');
+  for(const points of [2,1,0]){
+    const label=document.createElement('label');label.className='option';
+    const radio=document.createElement('input');radio.type='radio';radio.name=ch.id;radio.value=points;radio.checked=score(ch)===points;
+    const pill=document.createElement('span');pill.className='pill';
+    pill.innerHTML='<i aria-hidden="true">'+marks[points]+'</i>'+labels[points];
+    radio.addEventListener('change',()=>{
+      saveChapter(ch,points);updateStats();
+      $('#announcement').textContent=ch.title+' marked '+labels[points]+'. Overall progress '+$('#overall .percent').textContent;
+      if(!matches(ch)){renderList();$('#filter').focus()}
+    });
+    label.append(radio,pill);group.append(label);
+  }
+  return row;
+}
+$('#search').addEventListener('input',renderList);
+$('#filter').addEventListener('change',renderList);
+$('#clear').addEventListener('click',()=>{$('#search').value='';$('#filter').value='';renderList();$('#search').focus()});
+window.addEventListener('storage',event=>{
+  if(event.key!==null&&!event.key.startsWith(prefix))return;
+  try{
+    for(const ch of all)if(!unsaved.has(ch.id))values.set(ch.id,stored(localStorage.getItem(prefix+ch.id)));
+    updateStats();renderList();
+  }catch{warnStorage()}
+});
+$('#scope').textContent=all.length+' chapters across Physics, Chemistry and Mathematics';
+updateStats();renderList();
+// Decorative wireframe wave, drawn locally so the page is usable offline.
+function drawWave(){
+  const canvas=$('canvas'), w=canvas.clientWidth, h=canvas.clientHeight;
+  if(!w||!h)return;
+  const dpr=Math.min(window.devicePixelRatio||1,2);
+  canvas.width=Math.round(w*dpr);canvas.height=Math.round(h*dpr);
+  const ctx=canvas.getContext('2d');if(!ctx)return;
+  ctx.scale(dpr,dpr);ctx.lineWidth=.85;
+  for(let j=0;j<31;j++){
+    ctx.beginPath();ctx.strokeStyle='rgba(182,221,149,.45)';
+    for(let i=0;i<=120;i++){
+      const x=i/120, t=j/30;
+      const y=.90-.54*x+.18*Math.sin(7*x+t*1.9)+(.35-.71*x)*t;
+      if(i===0)ctx.moveTo(w*x,h*y);else ctx.lineTo(w*x,h*y);
+    }
+    ctx.stroke();
+  }
+}
+drawWave();window.addEventListener('resize',drawWave);
+</script>
+</body>
+</html>
